@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Finanças - Ações</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .nav-link.active {
+            font-weight: 600;
+            color: #047857; /* text-green-700 */
+            border-bottom: 2px solid #047857;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-green-700">Meu Blog de Finanças</h1>
+
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Home</a></li>
+                        <li><a href="investimentos.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Investimentos</a></li>
+                        <li><a href="orcamento.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Orçamento</a></li>
+                        <li><a href="acoes.html" class="nav-link text-gray-700 hover:text-green-700 py-2 active">Ações</a></li>
+                        <li><a href="contato.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+
+        <section id="page-acoes" class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-green-800">Página de Ações</h2>
+            <img src="images/bolsa-de-valores-acoes.png" alt="Imagem Ações" class="w-full h-64 object-cover rounded-lg mb-6">
+            <p class="text-lg mb-4">
+                Bem-vindo ao mundo da Renda Variável. Comprar uma ação significa se tornar sócio de uma empresa. Você passa a ter uma pequena parte do negócio e participa dos seus lucros (e também dos riscos).
+            </p>
+            <p class="mb-6">
+                A Bolsa de Valores, como a B3 no Brasil, é o ambiente onde essas negociações acontecem. Para começar, você precisa de uma conta em uma corretora de valores.
+            </p>
+
+            <hr class="my-8 border-gray-300">
+
+            <article>
+                <h3 class="text-2xl font-bold mt-8 mb-4 text-green-700">Como se Ganha Dinheiro com Ações?</h3>
+                <p class="mb-4">Existem duas formas principais de rentabilizar seu investimento em ações:</p>
+                <ul class="list-disc list-inside mb-4 space-y-3 pl-4">
+                    <li>
+                        <strong>1. Valorização (Ganho de Capital):</strong> É a forma mais óbvia. Você compra uma ação por um preço (ex: R$ 10,00) e, com o tempo, a empresa cresce, dá bons resultados e mais pessoas se interessam por ela. O preço da ação sobe (ex: para R$ 15,00) e você pode vendê-la com lucro.
+                    </li>
+                    <li>
+                        <strong>2. Dividendos (Renda Passiva):</strong> Quando uma empresa tem lucro, ela pode decidir distribuir uma parte desse lucro aos seus acionistas (sócios). Isso é o dividendo. Empresas sólidas e lucrativas costumam pagar dividendos regularmente (a cada 3 meses, 6 meses ou 1 ano).
+                    </li>
+                </ul>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4 text-green-700">Principais Estratégias de Investimento</h3>
+                <p class="mb-4">A forma como você investe depende totalmente do seu objetivo e do seu perfil. As duas estratégias mais conhecidas são opostas:</p>
+
+                <h4 class="text-xl font-semibold mb-3 text-gray-800">📈 Buy and Hold: A Mentalidade de Sócio</h4>
+                <p class="mb-4">
+                    Como o nome diz ("Comprar e Segurar"), esta é uma estratégia focada no **longo prazo** (anos ou décadas). O objetivo não é vender a ação, mas sim acumular um grande número de ações de boas empresas para construir patrimônio e viver da renda passiva dos dividendos no futuro.
+                </p>
+                <p class="mb-4">
+                    O investidor de Buy and Hold utiliza a **Análise Fundamentalista**, estudando a saúde financeira da empresa (lucros, dívidas, gestão, vantagens competitivas) antes de decidir se tornar sócio dela.
+                </p>
+
+                <h4 class="text-xl font-semibold mb-3 mt-8 text-gray-800">📉 Day Trade: A Especulação de Curtíssimo Prazo</h4>
+                <p class="mb-4">
+                    O Day Trade é o oposto. O operador (trader) compra e vende ações (ou outros ativos) no mesmo dia, buscando ganhar nas pequenas variações de preço que ocorrem em minutos ou horas. O objetivo é o lucro rápido.
+                </p>
+                <p class="mb-4">
+                    Esta estratégia não se baseia nos fundamentos da empresa, mas sim na **Análise Técnica** (ou Gráfica), que tenta prever movimentos futuros de preço com base nos padrões gráficos do passado.
+                </p>
+
+                <div class="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 my-6 rounded" role="alert">
+                    <p class="font-bold">Aviso Importante para Iniciantes</p>
+                    <p>
+                        O Day Trade é uma atividade de altíssimo risco e complexidade. Exige muito estudo, controle emocional e tempo de tela. A grande maioria dos iniciantes que tentam esta modalidade perde dinheiro. **Não é recomendado para quem está começando.**
+                    </p>
+                </div>
+
+            </article>
+
+            <hr class="my-8 border-gray-300">
+
+            <aside>
+                <h3 class="text-2xl font-bold mt-8 mb-4 text-green-700">🏛️ Lição da Babilônia: Ponha seu Dinheiro para Trabalhar</h3>
+                <p class="mb-4">
+                    Na página de Investimentos, falamos sobre a primeira lição: "Pague-se primeiro". Depois de separar essa parte do seu dinheiro, vem a segunda grande lição de "O Homem Mais Rico da Babilônia": **fazer esse dinheiro se multiplicar**.
+                </p>
+                <p class="mb-4">
+                    Deixar o dinheiro parado é inútil. Ao investir em ações de boas empresas que pagam dividendos, você está colocando o seu dinheiro para trabalhar por você, dia e noite, mesmo enquanto você dorme.
+                </p>
+                <blockquote class="bg-gray-50 border-l-4 border-green-600 p-4 my-4 text-gray-700 italic">
+                    "Cada moeda de ouro que você poupa é um escravo que trabalha para você. Cada centavo que esse escravo ganha é um 'filho' dele que também pode trabalhar para você. Faça seu exército de escravos dourados crescer e multiplicar."
+                </blockquote>
+                <p>
+                    Esse é o poder dos **juros compostos** e dos dividendos reinvestidos. Cada dividendo que você recebe e usa para comprar mais ações é um novo "trabalhador" que você contrata para gerar ainda mais renda para você no futuro.
+                </p>
+            </aside>
+
+            </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-6 text-center">
+            <p>&copy; 2025 - Meu Blog de Finanças - AOP2</p>
+            <p class="text-sm text-gray-500">Trabalho de Programação Web Frontend</p>
+        </div>
+    </footer>
+
+</body>
+</html>
