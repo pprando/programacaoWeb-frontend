@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
-    <title>Blog de Finanças - Orçamento</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Finanças - Orçamento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+    }
+    .nav-link.active {
+      font-weight: 600;
+      color: #10b981;
+      border-bottom: 2px solid #10b981;
+    }
+    .backdrop {
+      backdrop-filter: blur(20px);
+      background-color: rgba(30, 41, 59, 0.6);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="min-h-screen flex flex-col">
 
-    <header class="bg-white shadow-md sticky top-0 z-10">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <h1 class="text-3xl font-bold text-green-700">Meu Blog de Finanças</h1>
+  <header class="backdrop sticky top-0 z-10 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-green-400">Meu Blog de Finanças</h1>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="index.html" class="nav-link text-gray-300 hover:text-green-400 py-2">Home</a></li>
+            <li><a href="investimentos.html" class="nav-link text-gray-300 hover:text-green-400 py-2">Investimentos</a></li>
+            <li><a href="orcamento.html" class="nav-link text-gray-300 hover:text-green-400 py-2 active">Orçamento</a></li>
+            <li><a href="acoes.html" class="nav-link text-gray-300 hover:text-green-400 py-2">Ações</a></li>
+            <li><a href="contato.html" class="nav-link text-gray-300 hover:text-green-400 py-2">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-                <nav>
-                    <ul class="flex space-x-6">
-                        <li><a href="index.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Home</a></li>
-                        <li><a href="investimentos.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Investimentos</a></li>
-                        <li><a href="orcamento.html" class="nav-link text-gray-700 hover:text-green-700 py-2 active">Orçamento</a></li>
-                        <li><a href="acoes.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Ações</a></li>
-                        <li><a href="contato.html" class="nav-link text-gray-700 hover:text-green-700 py-2">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <main class="flex-grow px-4 py-10">
+    <section class="backdrop max-w-6xl mx-auto p-8 rounded-2xl shadow-2xl border border-gray-700">
+      <h2 class="text-3xl font-bold mb-6 text-green-400">Página de Orçamento</h2>
+      <img src="images/o-que-e-orcamento-de-vendas.jpg" alt="Banner Orçamento" class="w-full h-64 object-cover rounded-lg mb-6 shadow-md">
 
-    <main class="max-w-6xl mx-auto px-4 py-8">
+      <p class="text-lg mb-4 text-gray-300">
+        Ter um orçamento pessoal é a base da saúde financeira. Sem ele, é como dirigir no escuro: você não sabe para onde seu dinheiro está indo.
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2 text-gray-300">
+        <li><strong>50%</strong> para gastos essenciais (moradia, alimentação, transporte).</li>
+        <li><strong>30%</strong> para lazer e gastos variáveis.</li>
+        <li><strong>20%</strong> para poupança e investimentos.</li>
+      </ul>
 
-        <section id="page-orcamento" class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold mb-6 text-blue-800">Página de Orçamento</h2>
-            <img src="images/o-que-e-orcamento-de-vendas.jpg" alt="Banner Orçamento" class="w-full h-64 object-cover rounded-lg mb-6">
-            <p class="text-lg mb-4">
-                Ter um orçamento pessoal é a base de toda a saúde financeira. Sem ele, é como dirigir no escuro: você não sabe para onde seu dinheiro está indo.
-            </p>
-            <p class="mb-4">
-                O método mais simples é o 50-30-20:
-                <ul class="list-disc list-inside ml-4 mb-4">
-                    <li><b>50%</b> para gastos essenciais (moradia, alimentação, transporte).</li>
-                    <li><b>30%</b> para gastos variáveis (lazer, compras, restaurantes).</li>
-                    <li><b>20%</b> para poupar e investir (seus objetivos financeiros).</li>
-                </ul>
-            </p>
+      <h3 class="text-2xl font-bold mt-8 mb-4 text-green-400">📘 Lições da Babilônia</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-3">
+        <li><strong>“Pague-se primeiro”:</strong> reserve pelo menos 10% de tudo que ganha para você mesmo.</li>
+        <li><strong>“Controle seus gastos”:</strong> viva com menos do que ganha e diferencie o necessário do supérfluo.</li>
+      </ul>
 
-            <div class="mt-8 pt-6 border-t border-gray-200">
-                <h3 class="text-2xl font-bold mb-4 text-blue-700">Sabedoria Antiga: Lições da Babilônia</h3>
-                <p class="mb-4">
-                    Muitos desses conceitos modernos de orçamento são, na verdade, lições milenares. O livro "O Homem Mais Rico da Babilônia" nos ensina princípios atemporais que se encaixam perfeitamente aqui:
-                </p>
-                <ul class="list-disc list-inside ml-4 space-y-2 text-gray-700">
-                    <li>
-                        <b class="text-gray-900">"Pague-se primeiro":</b> Antes de pagar qualquer conta, separe pelo menos 10% de tudo que você ganha para você mesmo (para poupar e investir). Trate sua poupança como a conta mais importante. Isso se alinha com os 20% do método 50-30-20.
-                    </li>
-                    <li>
-                        <b class="text-gray-900">"Controle seus gastos":</b> O livro ensina a diferenciar "despesas necessárias" de "desejos". Viver com 90% (ou menos) do que você ganha é a chave para construir riqueza, e não o contrário.
-                    </li>
-                </ul>
-            </div>
+      <p class="mt-8 text-gray-300">
+        Nesta seção, vamos explorar ferramentas e técnicas para organizar suas finanças e fazer sobrar no fim do mês.
+      </p>
+    </section>
+  </main>
 
-            <p class="mt-8">
-                Nesta seção, vamos explorar ferramentas (planilhas, aplicativos) e técnicas para você finalmente assumir o controle de suas contas e fazer o dinheiro sobrar no final do mês.
-            </p>
-        </section>
-
-    </main>
-
-    <footer class="bg-gray-800 text-gray-300 mt-12">
-        <div class="max-w-6xl mx-auto px-4 py-6 text-center">
-            <p>&copy; 2025 - Meu Blog de Finanças - AOP2</p>
-            <p class="text-sm text-gray-500">Trabalho de Programação Web Frontend</p>
-        </div>
-    </footer>
+  <footer class="backdrop border-t border-gray-700 text-gray-400 mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center">
+      <p>&copy; 2025 - Meu Blog de Finanças - AOP2</p>
+      <p class="text-sm text-gray-500">Trabalho de Programação Web Frontend</p>
+    </div>
+  </footer>
 
 </body>
 </html>
