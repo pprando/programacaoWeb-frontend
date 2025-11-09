@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Finanças - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,15 +16,15 @@
         <div class="header-content">
             <h1 class="site-title">Meu Blog de Finanças</h1>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="investimentos.html" class="nav-link">Investimentos</a></li>
-                    <li><a href="orcamento.html" class="nav-link">Orçamento</a></li>
-                    <li><a href="acoes.html" class="nav-link">Ações</a></li>
-                    <li><a href="contato.html" class="nav-link">Contato</a></li>
-                </ul>
-            </nav>
+            <nav>
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="nav-link text-gray-300 hover:text-emerald-400 transition">Home</a></li>
+          <li><a href="investimentos.html" class="nav-link text-gray-300 hover:text-emerald-400 transition">Investimentos</a></li>
+          <li><a href="orcamento.html" class="nav-link text-gray-300 hover:text-emerald-400 transition">Orçamento</a></li>
+          <li><a href="acoes.html" class="nav-link active">Ações</a></li>
+          <li><a href="contato.html" class="nav-link text-gray-300 hover:text-emerald-400 transition">Contato</a></li>
+        </ul>
+      </nav>
         </div>
     </header>
 
